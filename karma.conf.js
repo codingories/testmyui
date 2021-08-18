@@ -20,6 +20,6 @@ module.exports = function (config) {
 
     reporters: ['spec'],
 
-    browsers: ['Chrome']
+    browsers: ['ChromeHeadless']
   })
 }
