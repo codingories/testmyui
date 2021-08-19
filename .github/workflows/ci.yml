@@ -7,7 +7,12 @@ jobs:
   build-and-deploy:
     runs-on: macos-10.15
     steps:
-    - name: Install and Build
-      run: |
-        npm install
-        npm run-script test:unit
+      - uses: actions/checkout@v2
+      - name: Setup node 12
+        uses: actions/setup-node@v2
+        with:
+          node-version: 12.x
+      - name: Install and Build
+        run: |
+          npm install
+          npm run-script test:unit
