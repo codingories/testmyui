@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test": "karma start --single-run",
+    "test:watch": "karma start",
     "test:unit": "vue-cli-service test:unit",
     "test-old": "vue-cli-service test:unit"
   },
