@@ -8,7 +8,6 @@ jobs:
     runs-on: macos-10.15
     steps:
       - uses: actions/checkout@v2
-      - uses: browser-actions/setup-chrome@latest
       - run: chrome --version
       - name: Setup node 12
         uses: actions/setup-node@v2
