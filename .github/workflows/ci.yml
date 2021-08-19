@@ -15,4 +15,4 @@ jobs:
       - name: Install and Build
         run: |
           npm install
-          npm run-script test:unit
+          npm run-script test
