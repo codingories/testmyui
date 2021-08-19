@@ -1,6 +1,5 @@
 var webpackConfig = require('@vue/cli-service/webpack.config.js')
 
-console.log('fuck', webpackConfig)
 
 const path = require('path')
 
@@ -20,6 +19,6 @@ module.exports = function (config) {
 
     reporters: ['spec'],
 
-    browsers: ['Chrome']
+    browsers: ['ChromeHeadless']
   })
 }

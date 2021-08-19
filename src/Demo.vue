@@ -2,6 +2,8 @@
   <div>
     <Gbutton>你好</Gbutton>
     <Gbutton loading>加载中</Gbutton>
+    <Gbutton icon="settings">加载中</Gbutton>
+
   </div>
 </template>
 <script>
