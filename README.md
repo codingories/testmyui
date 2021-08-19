@@ -1,5 +1,7 @@
 # testmyui
 
+![example workflow](https://github.com/codingories/testmyui/actions/workflows/ci.yml/badge.svg)
+
 ## Project setup
 ```
 yarn install
