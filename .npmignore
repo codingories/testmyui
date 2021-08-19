@@ -1,0 +1,7 @@
+/.idea/
+/docs/
+/src/
+/tests/
+.browserslistrc
+/public/
+karma.conf.js
