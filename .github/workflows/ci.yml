@@ -5,10 +5,13 @@ on:
       - master
 jobs:
   build-and-deploy:
-    runs-on: macos-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ windows-latest, macos-latest ]
     steps:
     - name: Checkout
-      uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+      uses: actions/master
       with:
         persist-credentials: false
     - name: Install and Build
