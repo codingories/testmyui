@@ -5,15 +5,8 @@ on:
       - master
 jobs:
   build-and-deploy:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ windows-latest, macos-latest ]
+    runs-on: [macos-latest, windows-latest]
     steps:
-    - name: Checkout
-      uses: actions/master
-      with:
-        persist-credentials: false
     - name: Install and Build
       run: |
         npm install
